@@ -30,4 +30,4 @@ Flavor = __decorate([
     typeorm_1.Entity()
 ], Flavor);
 exports.Flavor = Flavor;
-//# sourceMappingURL=flavour.entity.js.map
+//# sourceMappingURL=flavor.entity.js.map

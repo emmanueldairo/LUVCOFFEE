@@ -22,7 +22,9 @@ let CoffeesService = class CoffeesService {
         this.coffeeRepository = coffeeRepository;
     }
     findAll() {
-        return this.coffeeRepository.find();
+        return this.coffeeRepository.find({
+            relations: ['flavors']
+        });
     }
     async findOne(id) {
         const coffee = await this.coffeeRepository.findOne(id);
