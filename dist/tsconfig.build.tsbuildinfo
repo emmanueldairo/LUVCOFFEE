@@ -2757,8 +2757,8 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/entities/coffee.entity.ts": {
-        "version": "64cc100131b2cd2e4cf358f1f83ef27cd389070888a6f1de447cb3ba9b59b5af",
-        "signature": "e4aebe3c70ebb799ff41d1032579e390adcdbc275d06052a6fcf034f5efe40e2",
+        "version": "34494d7bb452fcb2e7914ab9eb8256a3c35b06be2b4aae422add266e14e4e976",
+        "signature": "f1db496042090e484d98a74da2629c4567b9b2868f379238cffd16d6993d539e",
         "affectsGlobalScope": false
       },
       "../node_modules/class-validator/types/validation/validationerror.d.ts": {
@@ -3472,8 +3472,8 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.service.ts": {
-        "version": "d77f26ffd7e887a49ea3bd96787be4b157544e02d8959e49eb86f65732215bb9",
-        "signature": "472ccd6b7ac7d22dcdfa10e2100225e656258fb96d750faad951c2b8cc4d5469",
+        "version": "505697ea38bc726a781b39663233be2248c1bdf4134a5cfa4da341ce38000989",
+        "signature": "4c878334ecc7ca948814de38f2ec6ccfc2cd1c1a7f13e5130c723a075a3a7b80",
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.controller.ts": {
@@ -6931,7 +6931,8 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/coffees/dto/create-coffee.dto.ts",
         "../src/coffees/dto/update-coffee.dto.ts",
-        "../src/coffees/entities/coffee.entity.ts"
+        "../src/coffees/entities/coffee.entity.ts",
+        "../src/coffees/entities/flavor.entity.ts"
       ],
       "../src/coffees/dto/create-coffee.dto.ts": [
         "../node_modules/class-validator/types/index.d.ts"
@@ -9899,11 +9900,15 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/coffees/dto/create-coffee.dto.ts",
         "../src/coffees/dto/update-coffee.dto.ts",
-        "../src/coffees/entities/coffee.entity.ts"
+        "../src/coffees/entities/coffee.entity.ts",
+        "../src/coffees/entities/flavor.entity.ts"
       ],
       "../src/coffees/dto/update-coffee.dto.ts": [
         "../node_modules/@nestjs/mapped-types/index.d.ts",
         "../src/coffees/dto/create-coffee.dto.ts"
+      ],
+      "../src/coffees/entities/coffee.entity.ts": [
+        "../src/coffees/entities/flavor.entity.ts"
       ],
       "../src/coffees/entities/flavor.entity.ts": [
         "../src/coffees/entities/coffee.entity.ts"
