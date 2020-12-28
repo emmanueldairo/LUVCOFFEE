@@ -3517,7 +3517,7 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.service.ts": {
-        "version": "0dde28831c668719d98058b7e948369c4b6650a257481dffbe80892f859a9c21",
+        "version": "a3807fd8b68983ffb921fa91041daf8bef16f90fc8ce113a5cc9625fef184dfc",
         "signature": "905d5ac28d302aa48ecc519fc4413b3bb03fd6c5fbc3d0462e3b17e171210272",
         "affectsGlobalScope": false
       },
@@ -3527,7 +3527,7 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.module.ts": {
-        "version": "2e82170afc6e29597cf521278ce5a1a950c22eddb478049c0d64d7d01cb7f10d",
+        "version": "af14858d7515ba992b289dee84cdfa63ce88fa50a670e14fbd1312dac70212f4",
         "signature": "d3a19632d9dfefef1b3451bcece8da21fe7079f14d42da4cf45eb1c1b6ed3d09",
         "affectsGlobalScope": false
       },
@@ -7000,7 +7000,8 @@
         "../src/coffees/coffees.controller.ts",
         "../src/coffees/coffees.service.ts",
         "../src/coffees/entities/coffee.entity.ts",
-        "../src/coffees/entities/flavor.entity.ts"
+        "../src/coffees/entities/flavor.entity.ts",
+        "../src/events/entities/event.entity.ts"
       ],
       "../src/coffees/coffees.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
