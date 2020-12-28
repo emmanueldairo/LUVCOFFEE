@@ -18,14 +18,18 @@ const coffee_entity_1 = require("./entities/coffee.entity");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const flavor_entity_1 = require("./entities/flavor.entity");
+const pagination_query_dto_1 = require("../common/dto/pagination-query.dto");
 let CoffeesService = class CoffeesService {
     constructor(coffeeRepository, flavorRepository) {
         this.coffeeRepository = coffeeRepository;
         this.flavorRepository = flavorRepository;
     }
-    findAll() {
+    findAll(paginationQuery) {
+        const { limit, offset } = paginationQuery;
         return this.coffeeRepository.find({
-            relations: ['flavors']
+            relations: ['flavors'],
+            skip: offset,
+            take: limit
         });
     }
     async findOne(id) {
