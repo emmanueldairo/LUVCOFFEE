@@ -3527,12 +3527,22 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.module.ts": {
-        "version": "af14858d7515ba992b289dee84cdfa63ce88fa50a670e14fbd1312dac70212f4",
+        "version": "7e51fc97db9583906c47e12b006058f218577a626df64a55f2b6cd01ea200e3a",
         "signature": "d3a19632d9dfefef1b3451bcece8da21fe7079f14d42da4cf45eb1c1b6ed3d09",
         "affectsGlobalScope": false
       },
+      "../src/coffee-rating/coffee-rating.service.ts": {
+        "version": "d1320878e061bb2758723312c82027b37f2277c61c8742744f7a4e5efcb96488",
+        "signature": "5bcf12103b35accdb8fbf4a03935ada26ff46c7f652ea2aa199ebcc47e40966c",
+        "affectsGlobalScope": false
+      },
+      "../src/coffee-rating/coffee-rating.module.ts": {
+        "version": "8cee856d4655a6ffb5150ca1bf85c6e5f47a673e1eac645a55c1c867c7c79d0e",
+        "signature": "bc449a092054ff2b088472a419ed52eba01811700d6342d76aadf2558247f6de",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "5bde80c50fc5dae88b19a831a9b048f649af148b15e6a5c42e973b7423693a05",
+        "version": "8957eca67bdae6fb222437d8420d0578b49baa3f2884c47bb07bd89a302aaa02",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -3724,11 +3734,6 @@
       "../src/migrations/1609181711062-coffeerefactor.ts": {
         "version": "bb08399d47edc0c4741695f7872dc067e5d036a28e55b024bd61069a34d05288",
         "signature": "6749a2650a3d7ca3106f93805a75ea573b350faefd1fca9e36e372cf46581abf",
-        "affectsGlobalScope": false
-      },
-      "../src/migrations/1609185559448-schemasync.ts": {
-        "version": "862da0d20150c884cc53cc3536cc48dbe0ac563f65dce79039746f6646a91991",
-        "signature": "eddfdd0e354f820d76e350125b479e1a1049d957462cb5bf886821d286c92e87",
         "affectsGlobalScope": false
       },
       "../src/migrations/1609185655578-schemasync.ts": {
@@ -6981,10 +6986,20 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
+        "../src/coffee-rating/coffee-rating.module.ts",
         "../src/coffees/coffees.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/coffee-rating/coffee-rating.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/coffee-rating/coffee-rating.service.ts",
+        "../src/coffees/coffees.module.ts"
+      ],
+      "../src/coffee-rating/coffee-rating.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/coffees/coffees.service.ts"
       ],
       "../src/coffees/coffees.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7044,9 +7059,6 @@
         "../src/app.module.ts"
       ],
       "../src/migrations/1609181711062-coffeerefactor.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/migrations/1609185559448-schemasync.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/migrations/1609185655578-schemasync.ts": [
@@ -10005,6 +10017,9 @@
       "../src/app.controller.ts": [
         "../src/app.service.ts"
       ],
+      "../src/coffee-rating/coffee-rating.service.ts": [
+        "../src/coffees/coffees.service.ts"
+      ],
       "../src/coffees/coffees.controller.ts": [
         "../src/coffees/coffees.service.ts",
         "../src/coffees/dto/create-coffee.dto.ts",
@@ -10031,9 +10046,6 @@
         "../src/coffees/entities/coffee.entity.ts"
       ],
       "../src/migrations/1609181711062-coffeerefactor.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
-      "../src/migrations/1609185559448-schemasync.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/migrations/1609185655578-schemasync.ts": [
@@ -10847,6 +10859,8 @@
       "../src/app.controller.ts",
       "../src/app.module.ts",
       "../src/app.service.ts",
+      "../src/coffee-rating/coffee-rating.module.ts",
+      "../src/coffee-rating/coffee-rating.service.ts",
       "../src/coffees/coffees.controller.ts",
       "../src/coffees/coffees.module.ts",
       "../src/coffees/coffees.service.ts",
@@ -10858,7 +10872,6 @@
       "../src/events/entities/event.entity.ts",
       "../src/main.ts",
       "../src/migrations/1609181711062-coffeerefactor.ts",
-      "../src/migrations/1609185559448-schemasync.ts",
       "../src/migrations/1609185655578-schemasync.ts",
       "../../../../../node_modules/@types/caseless/index.d.ts",
       "../../../../../node_modules/@types/request/index.d.ts",
