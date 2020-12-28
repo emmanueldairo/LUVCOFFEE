@@ -17,7 +17,7 @@ let CoffeesModule = class CoffeesModule {
 };
 CoffeesModule = __decorate([
     common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forFeature([coffee_entity_1.Coffee, flavor_entity_1.Flavor])],
+        imports: [typeorm_1.TypeOrmModule.forFeature([coffee_entity_1.Coffee, flavor_entity_1.Flavor, Event])],
         controllers: [coffees_controller_1.CoffeesController],
         providers: [coffees_service_1.CoffeesService]
     })

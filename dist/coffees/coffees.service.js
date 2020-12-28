@@ -19,10 +19,12 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const flavor_entity_1 = require("./entities/flavor.entity");
 const pagination_query_dto_1 = require("../common/dto/pagination-query.dto");
+const event_entity_1 = require("../events/entities/event.entity");
 let CoffeesService = class CoffeesService {
-    constructor(coffeeRepository, flavorRepository) {
+    constructor(coffeeRepository, flavorRepository, connection) {
         this.coffeeRepository = coffeeRepository;
         this.flavorRepository = flavorRepository;
+        this.connection = connection;
     }
     findAll(paginationQuery) {
         const { limit, offset } = paginationQuery;
@@ -58,6 +60,27 @@ let CoffeesService = class CoffeesService {
         const coffee = await this.findOne(id);
         return this.coffeeRepository.remove(coffee);
     }
+    async recommendCoffee(coffee) {
+        const queryRunner = this.connection.createQueryRunner();
+        await queryRunner.connect();
+        await queryRunner.startTransaction();
+        try {
+            coffee.recommendations++;
+            const recommendEvent = new event_entity_1.Event();
+            recommendEvent.name = 'recomment_coffee';
+            recommendEvent.type = 'coffee';
+            recommendEvent.payload = { coffeeId: coffee.id };
+            await queryRunner.manager.save(coffee);
+            await queryRunner.manager.save(recommendEvent);
+            await queryRunner.commitTransaction();
+        }
+        catch (error) {
+            await queryRunner.rollbackTransaction();
+        }
+        finally {
+            await queryRunner.release();
+        }
+    }
     async preloadFlavorByName(name) {
         const existingFlavor = await this.flavorRepository.findOne({ name });
         if (existingFlavor) {
@@ -71,7 +94,8 @@ CoffeesService = __decorate([
     __param(0, typeorm_1.InjectRepository(coffee_entity_1.Coffee)),
     __param(1, typeorm_1.InjectRepository(flavor_entity_1.Flavor)),
     __metadata("design:paramtypes", [typeorm_2.Repository,
-        typeorm_2.Repository])
+        typeorm_2.Repository,
+        typeorm_2.Connection])
 ], CoffeesService);
 exports.CoffeesService = CoffeesService;
 //# sourceMappingURL=coffees.service.js.map

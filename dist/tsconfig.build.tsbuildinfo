@@ -3412,8 +3412,8 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/entities/coffee.entity.ts": {
-        "version": "34494d7bb452fcb2e7914ab9eb8256a3c35b06be2b4aae422add266e14e4e976",
-        "signature": "f1db496042090e484d98a74da2629c4567b9b2868f379238cffd16d6993d539e",
+        "version": "310b010b27057b96f1366acc963e94f81999d5f414e647f8ff2fdb5eb39d1b9a",
+        "signature": "e0534be1b0ff375d84c49b46f91e8a478abf335d993765cbcc6b69721eb074d3",
         "affectsGlobalScope": false
       },
       "../src/coffees/dto/create-coffee.dto.ts": {
@@ -3511,9 +3511,14 @@
         "signature": "0695e3c78a22eb44058db77bb622ea079a1a8f9dc41867ead62b581b93a8527b",
         "affectsGlobalScope": false
       },
+      "../src/events/entities/event.entity.ts": {
+        "version": "c1fc7355deb3393ad06405905601c7bde738a6cd7ae25b5eb17622a39d16ea96",
+        "signature": "1ad86e19be4f4a168aed3e48f3e3b60965f9e6b39320ce00698058a0fd0ce411",
+        "affectsGlobalScope": false
+      },
       "../src/coffees/coffees.service.ts": {
-        "version": "e7176c9114ebfbc8ad2b9d0e86b988be60ba4dc77b15300a7c2ef510ada29c58",
-        "signature": "3a5dcaa02296a2b446339c652900f53f89c8149405bb5b5017bbd86dc8179054",
+        "version": "b5326b2cac44961e9f4905e97064f0471b09b7681b5a140c2faec0a3f36bb130",
+        "signature": "905d5ac28d302aa48ecc519fc4413b3bb03fd6c5fbc3d0462e3b17e171210272",
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.controller.ts": {
@@ -3522,7 +3527,7 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.module.ts": {
-        "version": "b6c136cda4c66e00a4a3e99cf6d81d8ccd2d39324188714b77d90043015c5625",
+        "version": "2e82170afc6e29597cf521278ce5a1a950c22eddb478049c0d64d7d01cb7f10d",
         "signature": "d3a19632d9dfefef1b3451bcece8da21fe7079f14d42da4cf45eb1c1b6ed3d09",
         "affectsGlobalScope": false
       },
@@ -6985,13 +6990,15 @@
       "../src/coffees/coffees.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/node/dns.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../src/coffees/dto/create-coffee.dto.ts",
         "../src/coffees/dto/update-coffee.dto.ts",
         "../src/coffees/entities/coffee.entity.ts",
         "../src/coffees/entities/flavor.entity.ts",
-        "../src/common/dto/pagination-query.dto.ts"
+        "../src/common/dto/pagination-query.dto.ts",
+        "../src/events/entities/event.entity.ts"
       ],
       "../src/coffees/dto/create-coffee.dto.ts": [
         "../node_modules/class-validator/types/index.d.ts"
@@ -7011,6 +7018,9 @@
       "../src/common/dto/pagination-query.dto.ts": [
         "../node_modules/class-transformer/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/events/entities/event.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10811,6 +10821,7 @@
       "../src/coffees/entities/coffee.entity.ts",
       "../src/coffees/entities/flavor.entity.ts",
       "../src/common/dto/pagination-query.dto.ts",
+      "../src/events/entities/event.entity.ts",
       "../src/main.ts",
       "../../../../../node_modules/@types/caseless/index.d.ts",
       "../../../../../node_modules/@types/request/index.d.ts",
