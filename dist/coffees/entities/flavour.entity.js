@@ -9,30 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Coffee = void 0;
+exports.Flavour = void 0;
 const typeorm_1 = require("typeorm");
-const flavour_entity_1 = require("./flavour.entity");
-let Coffee = class Coffee {
+const coffee_entity_1 = require("./coffee.entity");
+let Flavour = class Flavour {
 };
 __decorate([
     typeorm_1.PrimaryGeneratedColumn(),
     __metadata("design:type", Number)
-], Coffee.prototype, "id", void 0);
+], Flavour.prototype, "id", void 0);
 __decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
-], Coffee.prototype, "name", void 0);
+], Flavour.prototype, "name", void 0);
 __decorate([
-    typeorm_1.Column(),
-    __metadata("design:type", String)
-], Coffee.prototype, "brand", void 0);
-__decorate([
-    typeorm_1.JoinTable(),
-    typeorm_1.ManyToMany(type => flavour_entity_1.Flavour, (flavour) => flavour.coffees),
+    typeorm_1.ManyToMany(type => coffee_entity_1.Coffee, coffee => coffee.flavors),
     __metadata("design:type", Array)
-], Coffee.prototype, "flavors", void 0);
-Coffee = __decorate([
+], Flavour.prototype, "coffees", void 0);
+Flavour = __decorate([
     typeorm_1.Entity()
-], Coffee);
-exports.Coffee = Coffee;
-//# sourceMappingURL=coffee.entity.js.map
+], Flavour);
+exports.Flavour = Flavour;
+//# sourceMappingURL=flavour.entity.js.map
