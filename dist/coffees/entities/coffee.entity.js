@@ -27,6 +27,10 @@ __decorate([
     __metadata("design:type", String)
 ], Coffee.prototype, "brand", void 0);
 __decorate([
+    typeorm_1.Column({ nullable: true }),
+    __metadata("design:type", String)
+], Coffee.prototype, "description", void 0);
+__decorate([
     typeorm_1.Column({ default: 0 }),
     __metadata("design:type", Number)
 ], Coffee.prototype, "recommendations", void 0);

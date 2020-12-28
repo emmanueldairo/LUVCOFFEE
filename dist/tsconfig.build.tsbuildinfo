@@ -3412,8 +3412,8 @@
         "affectsGlobalScope": false
       },
       "../src/coffees/entities/coffee.entity.ts": {
-        "version": "310b010b27057b96f1366acc963e94f81999d5f414e647f8ff2fdb5eb39d1b9a",
-        "signature": "e0534be1b0ff375d84c49b46f91e8a478abf335d993765cbcc6b69721eb074d3",
+        "version": "397fc572d2eed0a4183038994173f6c97957962cdfca90bc58347acc4745937a",
+        "signature": "c2ac84e5ce5b7e196b6592d524b403e1e2c10229c8e7af9905c9faa5d7e4ebe9",
         "affectsGlobalScope": false
       },
       "../src/coffees/dto/create-coffee.dto.ts": {
@@ -3512,12 +3512,12 @@
         "affectsGlobalScope": false
       },
       "../src/events/entities/event.entity.ts": {
-        "version": "c1fc7355deb3393ad06405905601c7bde738a6cd7ae25b5eb17622a39d16ea96",
+        "version": "53d2fd9c8537dcedef51deedf3b8789088a30eef95ab07f1e7989457565cfe85",
         "signature": "1ad86e19be4f4a168aed3e48f3e3b60965f9e6b39320ce00698058a0fd0ce411",
         "affectsGlobalScope": false
       },
       "../src/coffees/coffees.service.ts": {
-        "version": "b5326b2cac44961e9f4905e97064f0471b09b7681b5a140c2faec0a3f36bb130",
+        "version": "0dde28831c668719d98058b7e948369c4b6650a257481dffbe80892f859a9c21",
         "signature": "905d5ac28d302aa48ecc519fc4413b3bb03fd6c5fbc3d0462e3b17e171210272",
         "affectsGlobalScope": false
       },
@@ -3719,6 +3719,21 @@
       "../src/main.ts": {
         "version": "ba5789dbbbbc9146eb5fbbb8b8270f7f10103b4e898d72095adc13998fc031a9",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/migrations/1609181711062-coffeerefactor.ts": {
+        "version": "bb08399d47edc0c4741695f7872dc067e5d036a28e55b024bd61069a34d05288",
+        "signature": "6749a2650a3d7ca3106f93805a75ea573b350faefd1fca9e36e372cf46581abf",
+        "affectsGlobalScope": false
+      },
+      "../src/migrations/1609185559448-schemasync.ts": {
+        "version": "862da0d20150c884cc53cc3536cc48dbe0ac563f65dce79039746f6646a91991",
+        "signature": "eddfdd0e354f820d76e350125b479e1a1049d957462cb5bf886821d286c92e87",
+        "affectsGlobalScope": false
+      },
+      "../src/migrations/1609185655578-schemasync.ts": {
+        "version": "309f28ec24b0a7a85ff4dce51ed61dcb2a7b80da1bbe84a55f9beb73a0c36003",
+        "signature": "d6af8ebd0892f2b0d69c29ca4eecb8650842a4f664d726bcd6d4441ed3f0f7a3",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -7027,6 +7042,15 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
       ],
+      "../src/migrations/1609181711062-coffeerefactor.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/migrations/1609185559448-schemasync.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/migrations/1609185655578-schemasync.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
       "../../../../../node_modules/@types/request/index.d.ts": [
         "../../../../../node_modules/@types/caseless/index.d.ts",
         "../../../../../node_modules/@types/tough-cookie/index.d.ts",
@@ -10005,6 +10029,15 @@
       "../src/coffees/entities/flavor.entity.ts": [
         "../src/coffees/entities/coffee.entity.ts"
       ],
+      "../src/migrations/1609181711062-coffeerefactor.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/migrations/1609185559448-schemasync.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/migrations/1609185655578-schemasync.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
       "../../../../../node_modules/@types/request/index.d.ts": [
         "../../../../../node_modules/@types/caseless/index.d.ts",
         "../../../../../node_modules/@types/tough-cookie/index.d.ts",
@@ -10823,6 +10856,9 @@
       "../src/common/dto/pagination-query.dto.ts",
       "../src/events/entities/event.entity.ts",
       "../src/main.ts",
+      "../src/migrations/1609181711062-coffeerefactor.ts",
+      "../src/migrations/1609185559448-schemasync.ts",
+      "../src/migrations/1609185655578-schemasync.ts",
       "../../../../../node_modules/@types/caseless/index.d.ts",
       "../../../../../node_modules/@types/request/index.d.ts",
       "../../../../../node_modules/@types/tough-cookie/index.d.ts",

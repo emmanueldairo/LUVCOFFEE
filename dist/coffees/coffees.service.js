@@ -67,7 +67,7 @@ let CoffeesService = class CoffeesService {
         try {
             coffee.recommendations++;
             const recommendEvent = new event_entity_1.Event();
-            recommendEvent.name = 'recomment_coffee';
+            recommendEvent.name = 'recommend_coffee';
             recommendEvent.type = 'coffee';
             recommendEvent.payload = { coffeeId: coffee.id };
             await queryRunner.manager.save(coffee);

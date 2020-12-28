@@ -80,7 +80,7 @@ export class CoffeesService {
         coffee.recommendations++;
 
         const recommendEvent= new Event()
-        recommendEvent.name = 'recomment_coffee'
+        recommendEvent.name = 'recommend_coffee'
         recommendEvent.type = 'coffee'
         recommendEvent.payload = { coffeeId: coffee.id }
 
